@@ -10,12 +10,7 @@ contract Vault is ERC20 {
     error InsufficientBalance();
 
     event Deposit(address indexed user, uint256 amount);
-    event TestEvent(
-        uint256 indexed param1,
-        uint256 indexed param2,
-        uint256 indexed param3,
-        uint256 param4
-    );
+    event TestEvent(uint256 indexed param1, uint256 indexed param2, uint256 indexed param3, uint256 param4);
     event Withdraw(address indexed user, uint256 amount);
     event DistributeYield(address indexed user, uint256 amount);
 

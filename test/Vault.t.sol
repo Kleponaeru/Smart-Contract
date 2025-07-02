@@ -53,7 +53,7 @@ contract VaultTest is Test {
         vault.distributeYield(1000);
         //check balance of vault
         assertEq(usdc.balanceOf(address(vault)), 2000);
-        
+
         //lucy withdraw 500 USDC
         //Expect emit withdraw event
         vm.expectEmit(true, true, true, true);
